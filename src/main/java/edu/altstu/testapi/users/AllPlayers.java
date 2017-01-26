@@ -1,22 +1,21 @@
-package edu.altstu.testapi;
+package edu.altstu.testapi.users;
 
+import com.fasterxml.jackson.annotation.JsonRootName;
 import java.util.ArrayList;
 import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  *
  * @author Евгений
  */
-public class Response {
+@JsonRootName("response")
+@Getter
+@Setter
+public class AllPlayers {
+
     private List<Player> players = new ArrayList<>();
-
-    public List<Player> getPlayers() {
-        return players;
-    }
-
-    public void setPlayers(List<Player> players) {
-        this.players = players;
-    }
 
     @Override
     public String toString() {
@@ -27,7 +26,5 @@ public class Response {
                 });
         return buffer.toString();
     }
-    
-    
-    
+
 }

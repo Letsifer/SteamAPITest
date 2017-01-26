@@ -1,13 +1,13 @@
-package edu.altstu.testapi;
+package edu.altstu.testapi.users;
 
 /**
  *
  * @author Евгений
  */
 public class Head {
-    private Response response;
+    private AllPlayers response;
 
-    public Response getResponse() {
+    public AllPlayers getResponse() {
         return response;
     }
 

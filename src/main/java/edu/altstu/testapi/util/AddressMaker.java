@@ -3,6 +3,7 @@ package edu.altstu.testapi.util;
 import java.util.HashMap;
 import java.util.Map;
 import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -10,6 +11,7 @@ import lombok.Setter;
  * @author gea
  */
 @Setter
+@NoArgsConstructor
 public class AddressMaker {
 
     /**
